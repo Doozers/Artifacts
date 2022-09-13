@@ -1,6 +1,6 @@
 ENV ?= `echo ${{ github.run_number }}`
 
 all:
-	@echo "test"
-	@echo "${ENV}"
-	echo ${{ github.run_number }}
+	@echo " 1 test"
+	@echo " 2 ${ENV}"
+	echo " 3 ${{ github.run_number }}"

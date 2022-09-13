@@ -1,6 +1,4 @@
-VAR ?= ${github.run_number}
-
-ifeq ( ,$(VAR))
+ifneq ( ,$(VAR))
 	bool = true	
 else
 	bool = false

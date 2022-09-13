@@ -1,4 +1,4 @@
-ENV ?= ${{ github.run_number }}
+ENV ?= echo ${{ github.run_number }}
 
 all:
 	@echo "test"

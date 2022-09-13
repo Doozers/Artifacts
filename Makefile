@@ -1,6 +1,10 @@
-ENV ?= `echo ${{ github.run_number }}`
+VAR ?= ${github.run_number}
+
+ifeq ( ,$(VAR))
+	bool = true	
+else
+	bool = false
+endif
 
 all:
-	@echo " 1 test"
-	@echo " 2 ${ENV}"
-	@echo " 3 ${ github.run_number }"
+	@echo ${bool}

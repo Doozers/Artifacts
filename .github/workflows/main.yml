@@ -27,6 +27,7 @@ jobs:
       - name: Test Makefile
         run: |
           make
+          echo ${{ github.run_number }}
 
       # Runs a single command using the runners shell
       - name: Gen artifacts

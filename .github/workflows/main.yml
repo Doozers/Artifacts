@@ -26,7 +26,7 @@ jobs:
 
       - name: Test Makefile
         run: |
-          make env
+          make
 
       # Runs a single command using the runners shell
       - name: Gen artifacts
